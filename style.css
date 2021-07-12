@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@500&family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/*
+
+font-family: 'Anton', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Padauk', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.img{
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    opacity: 0.9;
+}
+.img2{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    object-fit: cover;
+    
+}
+.img3{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    object-fit: cover;
+    padding: 10px;
+    fill: #fff;
+    filter: invert(100%);
+}
+.head{
+    
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    
+
+}
+.head .text{
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    
+}
+.text{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.text .h1{
+    font-size: 2.5em;
+     font-weight: 200;
+     font-family: 'Padauk', sans-serif;
+     padding: 5px;
+     margin-top: 0;
+    
+     
+}
+.text .p{
+    position: relative;
+    font-size: 0.5em;
+     font-weight: 100;
+     font-family: 'Ubuntu', sans-serif;
+     left: 25%;
+     top: -20%;
+     margin: 0;
+    
+}
+li{
+    list-style: none;
+    
+    
+    
+}
+ul{
+    display: flex;
+   
+    
+}
+.menu{
+   
+   position: relative;
+   color: #fff; 
+   margin: 0;
+   padding: 5px;
+   align-items: center;
+   z-index: 10;
+}
+.menu a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 25px;
+    z-index: 1000;
+}
+.menu a:hover{
+    background-color: #555;
+    text-decoration: none;
+    color: #fff;
+}
+.words{
+    position:absolute;
+    top: 40%;
+    left: 20%;
+    color: #fff;
+    z-index: 100;
+   justify-content: center;
+   text-shadow: 0.2rem 0.3rem rgba(0,0,0,0.6);
+   animation: movetext 1s 0.5s
+    forwards;
+
+}
+ .words h3{
+     font-size: 4.5em;
+     font-weight: 500;
+     font-family: 'Padauk', sans-serif;
+     padding: 0;
+     margin: 0;
+ }
+ .words h2{
+    font-size: 6.5em;
+    font-weight: 50;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+ }
+ .words span{
+    font-size: 1em;
+    font-weight: 200;
+    font-family: 'Anton', sans-serif;
+ }
+ .words p{
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: 'Padauk', sans-serif;
+    padding: 0;
+    margin: 0;
+ }
+
+ @keyframes movetext{
+    0%{
+        transform: translateY(40rem);
+    }
+    100%{
+        transform: translateY(0)
+        rotateY(0);
+        opacity: 1;
+    }
+}
+
+.middle{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/s2.jpg');
+    background-size: cover;
+    color: #fff; 
+}
+.mid{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/n3.jpg');
+    background-size: cover;
+    object-fit: cover;
+    color: #fff;
+    
+   
+}
+
+.box{
+    height: 500px;
+    min-width: 100px;
+    display: flex;
+    flex-grow: 1;
+    word-wrap:initial;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    
+}
+.b1{
+     height: 400px;
+     background: rgba(0,0,0,0.7);
+     flex-grow: 1;
+     padding: 10px 10px 10px;
+     text-align: start;
+     border-radius: 20px;
+     margin-right: 5px;
+    
+}
+.one{
+    background: rgba(0,0,0,0.5);
+    flex-grow: 1;
+    padding: 10px 10px 10px;
+    border-radius: 20px;
+     margin-right: 5px;
+     
+}
+.two{
+    background: rgba(0,0,0,0.2);
+    flex-grow: 1;
+    padding: 10px 10px 10px;
+    border-radius: 20px;
+     margin-right: 5px;
+}
+.three{
+    background: rgba(0,0,0,0.7);
+    flex-grow: 1;
+    padding: 10px 10px 10px;
+    border-radius: 20px;
+     margin-right: 5px;
+}
+
+
+
+
+ @media(max-width:800px){
+     .words{
+         position:absolute;
+         top: 50%;
+     }
+    .words h3{
+        font-size: 1.2em;
+        font-weight: 100;
+    }
+    .words h2{
+        font-size: 2em;
+        font-weight: 100;
+    }
+    .words span{
+        font-size: 0.8em;
+        font-weight: 100;
+    }
+    .text h1{
+        font-size: 0.4em;
+    }
+    .text .p{
+        position: relative;
+        top: 2%;
+        left: 0%;
+    }
+    ul{
+        display: block;
+    }
+    .box{
+        display: contents;
+    }
+    .one{
+       
+        padding: 10px;
+    }
+    .two{
+        margin: 10px;
+        padding: 10px;
+    }
+    .three{
+        margin: 10px;
+        padding: 10px;
+    }
+    .b1{
+        margin: 10px;
+        padding: 10px;
+    }
+    .middle .mid{
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+    
+ }
+
+ /*
+
+blog.html
+ */
+
+ video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.bhead{
+    
+   padding: 150px;
+    text-align: center;
+}
+.bh1{
+    font-size: 5em;
+    font-weight: 500;
+    font-family:'IBM Plex Sans', sans-serif;
+    color: #A04000;
+}
+.bspan{
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Padauk', sans-serif;
+    background: rgba(0,0,0,0.2);
+    color: #A04000;
+}
+.bh{
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+}
+
+/*
+
+about.html
+
+*/
+
+.foot{
+  
+  background: rgba(0,0,0,0.9);
+  height: 70px;
+  
+}
+
+.social{
+    
+    bottom: -16px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+    
+    
+  
+}
+.social li{
+    list-style: none;
+    
+}
+
+.social li a{
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s;
+   
+}
+
+.social li a:hover{
+    transform: scale(0.5) translateY(-15px);
+}
+.afoot{
+    display: flex;
+    justify-content: space-between;
+    color:#85C1E9 ;
+    bottom: 0px;
+    z-index: 100;
+    font-size: 1.8em;
+    padding: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+}
+.about{
+    position: absolute;
+    top: 40%;
+    background: rgba(0,0,0,0.9);
+   text-align: center;
+    z-index: 100;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.about h1{
+    font-size: 4em;
+    color: #85C1E9;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif;
+}
+.about h5{
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Padauk', sans-serif;
+}
+.about p{
+    font-size: 1.5em;
+    color: #85C1E9;
+    font-weight:bolder;
+    font-family:'IBM Plex Sans', sans-serif;
+}
+.btn{
+    width: 100%;
+    text-align: center;
+    
+}
