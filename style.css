@@ -225,61 +225,7 @@ ul{
 
 
 
- @media(max-width:800px){
-     .words{
-         position:absolute;
-         top: 50%;
-     }
-    .words h3{
-        font-size: 1.2em;
-        font-weight: 100;
-    }
-    .words h2{
-        font-size: 2em;
-        font-weight: 100;
-    }
-    .words span{
-        font-size: 0.8em;
-        font-weight: 100;
-    }
-    .text h1{
-        font-size: 0.4em;
-    }
-    .text .p{
-        position: relative;
-        top: 2%;
-        left: 0%;
-    }
-    ul{
-        display: block;
-    }
-    .box{
-        display: contents;
-    }
-    .one{
-       
-        padding: 10px;
-    }
-    .two{
-        margin: 10px;
-        padding: 10px;
-    }
-    .three{
-        margin: 10px;
-        padding: 10px;
-    }
-    .b1{
-        margin: 10px;
-        padding: 10px;
-    }
-    .middle .mid{
-        height: auto;
-        width: auto;
-        padding: 10px;
-    }
-    
- }
-
+ 
  /*
 
 blog.html
@@ -326,7 +272,7 @@ about.html
 .foot{
   
   background: rgba(0,0,0,0.9);
-  height: 70px;
+  height: fit-content;
   
 }
 
@@ -380,6 +326,7 @@ about.html
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
+   
 }
 .about h1{
     font-size: 4em;
@@ -403,4 +350,110 @@ about.html
     width: 100%;
     text-align: center;
     
+}
+
+
+@media(max-width:800px){
+    .words{
+        position:absolute;
+        top: 50%;
+    }
+   .words h3{
+       font-size: 1.2em;
+       font-weight: 100;
+   }
+   .words h2{
+       font-size: 2em;
+       font-weight: 100;
+   }
+   .words span{
+       font-size: 0.8em;
+       font-weight: 100;
+   }
+   .text h1{
+       font-size: 0.4em;
+   }
+   .text .p{
+       position: relative;
+       top: 2%;
+       left: 0%;
+   }
+   ul{
+       display: block;
+   }
+   .box{
+       display: contents;
+   }
+   .one{
+      
+       padding: 10px;
+   }
+   .two{
+       margin: 10px;
+       padding: 10px;
+   }
+   .three{
+       margin: 10px;
+       padding: 10px;
+   }
+   .b1{
+       margin: 10px;
+       padding: 10px;
+   }
+   .middle .mid{
+       height: auto;
+       width: auto;
+       padding: 10px;
+   }
+   .img{
+       object-fit: cover;
+   }
+   video{
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       opacity: 0.8;
+   }
+   .bhead{
+       position: absolute;
+       top: 15%;
+       overflow: hidden;
+   }
+   .bh1{
+       font-size: 50px;
+   }
+   .bspan{
+       font-size: 50px;
+   }
+   .afoot{
+       font-size: 0.8em;
+       flex-direction: column;
+   }
+   .foot{
+       height: auto;
+   }
+   .about h1{
+       font-size: 0.8em;
+   }
+   .about h5{
+       font-size: 0.8em;
+   }
+   .about p{
+       font-size: 0.8em;
+   }
+   .about{
+           position: absolute;
+           top: 38%;
+           background: rgba(0,0,0,0.9);
+           text-align: center;
+           z-index: 100;
+           padding: 40px;
+           margin: 30px;
+           border-radius: 20px;
+   }
+   
+   
 }
